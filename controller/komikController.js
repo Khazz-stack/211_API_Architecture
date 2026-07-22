@@ -1,6 +1,6 @@
 const db = require('../models');
 
-async function getAllkomik(req, res) {
+async function getAlLKomik(req, res){
     try {
         const komik = await db.komik.findAll();
         res.status(200).json(komik);
